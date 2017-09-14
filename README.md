@@ -2,7 +2,7 @@
 
 Play the game of life with given initial state or define your own.
 
-[Live Application](game-of-life-dlzl.surge.sh)
+[Live Application](https://game-of-life-dlzl.surge.sh)
 
 ### Project Goals
 
