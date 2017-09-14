@@ -1,59 +1,57 @@
 a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 body {
-    background-color: #525266;
-    color: #ffffff;
-    font-family: 'Muli', sans-serif;
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
+  background-color: #525266;
+  color: #ffffff;
+  font-family: 'Muli', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
 
 button {
-    border: none;
-	border-radius: 2px;
-    color: #000000;
-    cursor: pointer;
-    font-family: 'Muli', sans-serif;
-    font-weight: 700;
-    padding: 10px 20px;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
 }
 
 h1 {
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 
 table {
-    border-collapse: collapse;
-    border: 1px solid #000000;
-    margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin: 0 auto;
 }
 
 table td {
-    border: 1px solid #000000;
-	border-radius: 1px;
-    height: 15px;
-    width: 15px;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
 }
 
 .alive {
-    background-color: #ffe5a9;
+  background-color: #ffe5a9;
 }
 
 .clear {
-    background-color: #cbbeb5;
+  background-color: #cbbeb5;
 }
 
 .dead {
-    background-color: #423f3b;
+  background-color: #423f3b;
 }
 
 .start {
-    background-color: #ffe5a9;
+  background-color: #ffe5a9;
 }
 
 .stop {
-    background-color: #ff6666;
+  background-color: #ff6666;
 }
