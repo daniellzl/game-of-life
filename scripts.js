@@ -127,9 +127,7 @@ const Instructions = (props) => {
   return (
     <div>
       <p>You can add or remove cells anytime you want!</p>
-      <p>Learn more about the Game of Life at
-        <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>
-      </p>
+      <p>Learn more about the Game of Life at <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a></p>
     </div>
   );
 }
