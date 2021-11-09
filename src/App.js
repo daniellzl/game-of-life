@@ -1,6 +1,8 @@
+import GameOfLife from "./components/game-of-life/game-of-life.component";
+
 const App = () => (
   <>
-    App
+    <GameOfLife />
   </>
 );
 
