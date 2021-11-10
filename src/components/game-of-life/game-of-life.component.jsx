@@ -3,7 +3,7 @@ import { getRandomizedBoard, advanceOneGen, toggleCell } from "../../helper.js";
 
 const BOARD_X = 5;
 const BOARD_Y = 5
-const UPDATE_TIME = 2000;
+const UPDATE_INTERVAL = 2000;
 
 const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
   const [board, setBoard] = useState(initialBoard);
@@ -15,7 +15,7 @@ const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
     const interval = setInterval(() => {
       setBoard((board) => advanceOneGen(board));
       setGeneration((generation) => generation + 1);
-    }, UPDATE_TIME);
+    }, UPDATE_INTERVAL);
     setGameInterval(interval);
     setIsLiveGame(true);
   };
