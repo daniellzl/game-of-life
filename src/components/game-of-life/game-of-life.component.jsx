@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { getRandomizedBoard, advanceOneGen, toggleCell } from "../../helper.js";
 
-const INITIAL_BOARD = getRandomizedBoard(5, 5);
+const BOARD_X = 5;
+const BOARD_Y = 5
 const UPDATE_TIME = 2000;
 
-const GameOfLife = () => {
-  const [board, setBoard] = useState(INITIAL_BOARD);
+const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
+  const [board, setBoard] = useState(initialBoard);
   const [generation, setGeneration] = useState(0);
   const [gameInterval, setGameInterval] = useState(null);
   const [isLiveGame, setIsLiveGame] = useState(false);
@@ -26,7 +27,7 @@ const GameOfLife = () => {
 
   const resetGame = () => {
     if (isLiveGame) return;
-    setBoard(INITIAL_BOARD);
+    setBoard(initialBoard);
     setGeneration(0);
   };
 
@@ -38,11 +39,11 @@ const GameOfLife = () => {
   return (
     <>
       <div>{generation}</div>
-      {board.map((row, r) => {
+      {board.map((row, rowI) => {
         return (
-          <div style={{ display: "flex" }}>
-            {row.map((col, c) => (
-              <div style={{ padding: "10px" }} onClick={handleCellClick(r, c)}>
+          <div key={`row${rowI}`} style={{ display: "flex" }}>
+            {row.map((col, colI) => (
+              <div key={`col${colI}`} style={{ padding: "10px" }} onClick={handleCellClick(rowI, colI)}>
                 {col}
               </div>
             ))}
@@ -50,7 +51,7 @@ const GameOfLife = () => {
         );
       })}
       <div>
-        <button onClick={startGame} disabled={isLiveGame}>
+        <button id="start-game" onClick={startGame} disabled={isLiveGame}>
           start
         </button>
         <button onClick={stopGame} disabled={!isLiveGame}>
