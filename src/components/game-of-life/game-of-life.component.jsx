@@ -51,7 +51,7 @@ const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
         );
       })}
       <div>
-        <button id="start-game" onClick={startGame} disabled={isLiveGame}>
+        <button onClick={startGame} disabled={isLiveGame}>
           start
         </button>
         <button onClick={stopGame} disabled={!isLiveGame}>
