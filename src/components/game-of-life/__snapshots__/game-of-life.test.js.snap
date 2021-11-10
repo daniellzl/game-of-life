@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doesn't explode 1`] = `
+<Fragment>
+  <div>
+    0
+  </div>
+  <div
+    key="row0"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      key="col0"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col1"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col2"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col3"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col4"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+  </div>
+  <div
+    key="row1"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      key="col0"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col1"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col2"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col3"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col4"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+  </div>
+  <div
+    key="row2"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      key="col0"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col1"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col2"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col3"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col4"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+  </div>
+  <div
+    key="row3"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      key="col0"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col1"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col2"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      key="col3"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col4"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+  </div>
+  <div
+    key="row4"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      key="col0"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col1"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col2"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col3"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      key="col4"
+      onClick={[Function]}
+      style={
+        Object {
+          "padding": "10px",
+        }
+      }
+    >
+      1
+    </div>
+  </div>
+  <div>
+    <button
+      disabled={false}
+      id="start-game"
+      onClick={[Function]}
+    >
+      start
+    </button>
+    <button
+      disabled={true}
+      onClick={[Function]}
+    >
+      stop
+    </button>
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      reset
+    </button>
+  </div>
+</Fragment>
+`;
