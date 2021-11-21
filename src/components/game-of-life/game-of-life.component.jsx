@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { getRandomizedBoard, advanceOneGen, toggleCell } from "../../helper.js";
+import "nes.css/css/nes.min.css";
+import CSS from "./game-of-life.module.scss";
 
 const BOARD_X = 5;
-const BOARD_Y = 5
+const BOARD_Y = 5;
 const UPDATE_INTERVAL = 2000;
 
-const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
+const GameOfLife = ({
+  initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y),
+}) => {
   const [board, setBoard] = useState(initialBoard);
   const [generation, setGeneration] = useState(0);
   const [gameInterval, setGameInterval] = useState(null);
@@ -37,19 +41,27 @@ const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
   };
 
   return (
-    <>
-      <div>{generation}</div>
-      {board.map((row, rowI) => {
-        return (
-          <div key={`row${rowI}`} style={{ display: "flex" }}>
-            {row.map((col, colI) => (
-              <div key={`col${colI}`} style={{ padding: "10px" }} onClick={handleCellClick(rowI, colI)}>
-                {col}
-              </div>
-            ))}
-          </div>
-        );
-      })}
+    <div className={CSS.gameOfLife}>
+      <div className="nes-text is-primary">Game of Life</div>
+      <div>Generation: {generation}</div>
+      <div>
+        {board.map((row, rowI) => {
+          return (
+            <div key={`row${rowI}`} style={{ display: "flex" }}>
+              {row.map((col, colI) => (
+                <div
+                  key={`col${colI}`}
+                  style={{ padding: "10px" }}
+                  onClick={handleCellClick(rowI, colI)}
+                >
+                  {col}
+                </div>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+
       <div>
         <button onClick={startGame} disabled={isLiveGame}>
           start
@@ -61,7 +73,7 @@ const GameOfLife = ({ initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y)}) => {
           reset
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
