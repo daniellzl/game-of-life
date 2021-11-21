@@ -1,0 +1,16 @@
+.gridCell {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  transition: border-color 1s;
+
+  &.liveGame {
+    border-color: rgba(0, 0, 0, 0);;
+  }
+
+  &.alive {
+    background-color: #149f13;
+  }
+}

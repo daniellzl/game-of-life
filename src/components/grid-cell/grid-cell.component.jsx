@@ -1,9 +1,9 @@
-const GridCell = ({ isAlive }) => {
+import CSS from "./grid-cell.module.scss";
+
+const GridCell = ({ isAlive, isLiveGame, handleCellClick }) => {
   return (
-    <div>
-      {isAlive ? "1" : "0"}
-    </div>
-  )
-}
+    <div className={`${CSS.gridCell} ${isAlive ? CSS.alive : null} ${isLiveGame ? CSS.liveGame : null}`} onClick={handleCellClick}></div>
+  );
+};
 
 export default GridCell;

@@ -1,15 +1,20 @@
 import { useState } from "react";
-import { getRandomizedBoard, advanceOneGen, toggleCell } from "../../helper.js";
+import {
+  getRandomizedBoard,
+  advanceOneGen,
+  toggleCell,
+  clearBoard,
+} from "../../helper.js";
 import GridCell from "../grid-cell/grid-cell.component";
 import "nes.css/css/nes.min.css";
 import CSS from "./game-of-life.module.scss";
 
-const BOARD_X = 5;
-const BOARD_Y = 5;
-const UPDATE_INTERVAL = 2000;
+const BOARD_X = 40;
+const BOARD_Y = 30;
+const UPDATE_INTERVAL = 750;
 
 const GameOfLife = ({
-  initialBoard = getRandomizedBoard(BOARD_X, BOARD_Y),
+  initialBoard = getRandomizedBoard(BOARD_Y, BOARD_X),
 }) => {
   const [board, setBoard] = useState(initialBoard);
   const [generation, setGeneration] = useState(0);
@@ -30,48 +35,66 @@ const GameOfLife = ({
     setIsLiveGame(false);
   };
 
+  const clearGame = () => {
+    setBoard((board) => clearBoard(board));
+    setGeneration(0);
+  };
+
   const resetGame = () => {
-    if (isLiveGame) return;
     setBoard(initialBoard);
     setGeneration(0);
   };
 
   const handleCellClick = (r, c) => () => {
-    if (isLiveGame) return;
     setBoard((board) => toggleCell(r, c, board));
   };
 
   return (
     <div className={CSS.gameOfLife}>
-      <div className="nes-text is-primary">Game of Life</div>
-      <div>Generation: {generation}</div>
-      <div>
+      <div className={`${CSS.title}`}>Game of Life</div>
+      <div className={`${CSS.generations}`}>Generations: {generation}</div>
+      <div className={CSS.board}>
         {board.map((row, rowI) => {
           return (
             <div key={`row${rowI}`} style={{ display: "flex" }}>
               {row.map((col, colI) => (
-                <div
+                <GridCell
                   key={`col${colI}`}
-                  style={{ padding: "10px" }}
-                  onClick={handleCellClick(rowI, colI)}
-                >
-                  <GridCell isAlive={col === 1} />
-                </div>
+                  isAlive={col === 1}
+                  isLiveGame={isLiveGame}
+                  handleCellClick={handleCellClick(rowI, colI)}
+                />
               ))}
             </div>
           );
         })}
       </div>
-
-      <div>
-        <button onClick={startGame} disabled={isLiveGame}>
-          start
+      <div className={CSS.buttons}>
+        <button
+          className={`nes-btn ${isLiveGame ? "is-disabled" : "is-success"} ${CSS.button}`}
+          onClick={startGame}
+          disabled={isLiveGame}
+        >
+          START
         </button>
-        <button onClick={stopGame} disabled={!isLiveGame}>
-          stop
+        <button
+          className={`nes-btn ${isLiveGame ? "is-error" : "is-disabled"} ${CSS.button}`}
+          onClick={stopGame}
+          disabled={!isLiveGame}
+        >
+          STOP
         </button>
-        <button onClick={resetGame} disabled={isLiveGame}>
-          reset
+        <button
+          className={`nes-btn is-warning ${CSS.button}`}
+          onClick={clearGame}
+        >
+          CLEAR
+        </button>
+        <button
+          className={`nes-btn is-primary ${CSS.button}`}
+          onClick={resetGame}
+        >
+          RESET
         </button>
       </div>
     </div>

@@ -1,3 +1,42 @@
 .gameOfLife {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../assets/images/mario-snes-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    color: #8fcd14;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .board {
+    margin-bottom: 1rem;
+    background-color: white;
+    width: 100%;
+
+    @media (min-width: 960px) {
+      width: initial;
+    }
+  }
+
+  .generations {
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .button {
+      min-width: 8rem;
+      margin: 1rem 1rem;
+    }
+  }
 }
