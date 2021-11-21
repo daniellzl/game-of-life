@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { getRandomizedBoard, advanceOneGen, toggleCell } from "../../helper.js";
+import GridCell from "../grid-cell/grid-cell.component";
 import "nes.css/css/nes.min.css";
 import CSS from "./game-of-life.module.scss";
 
@@ -54,7 +55,7 @@ const GameOfLife = ({
                   style={{ padding: "10px" }}
                   onClick={handleCellClick(rowI, colI)}
                 >
-                  {col}
+                  <GridCell isAlive={col === 1} />
                 </div>
               ))}
             </div>
