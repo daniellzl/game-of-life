@@ -51,7 +51,7 @@ const GameOfLife = ({
   return (
     <div className={CSS.gameOfLife}>
       <div className={CSS.titleFrame}>
-        <div className={`${CSS.title}`}>Game of Life</div>
+        <div className={`${CSS.title}`}>Conway's Game of Life</div>
         <div className={CSS.icons}>
           <a
             className={CSS.link}
