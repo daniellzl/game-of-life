@@ -4,7 +4,7 @@ export const getRandomizedBoard = (R = 0, C = 0) => {
   for (let r = 0; r < R; r++) {
     board[r] = new Array(C);
     for (let c = 0; c < C; c++) {
-      board[r][c] = Math.random() > 0.65 ? 1 : 0;
+      board[r][c] = Math.random() > 0.75 ? 1 : 0;
     }
   }
 
