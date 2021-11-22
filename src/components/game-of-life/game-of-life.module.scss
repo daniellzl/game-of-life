@@ -8,10 +8,31 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .title {
-    color: #8fcd14;
+  .titleFrame {
+    display: flex;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+
+    .title {
+      color: #8fcd14;
+      font-size: 1.5rem;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+
+      .link {
+        background-color: #e59400;
+        border-radius: 100%;
+        text-decoration: none;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+      }
+    }
   }
 
   .board {

@@ -50,7 +50,26 @@ const GameOfLife = ({
 
   return (
     <div className={CSS.gameOfLife}>
-      <div className={`${CSS.title}`}>Game of Life</div>
+      <div className={CSS.titleFrame}>
+        <div className={`${CSS.title}`}>Game of Life</div>
+        <div className={CSS.icons}>
+          <a
+            className={CSS.link}
+            target="_blank"
+            rel="noreferrer"
+            href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+          >
+            ?
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/daniellzl/game-of-life"
+          >
+            <i class="nes-icon github"></i>
+          </a>
+        </div>
+      </div>
       <div className={`${CSS.generations}`}>Generations: {generation}</div>
       <div className={CSS.board}>
         {board.map((row, rowI) => {
@@ -70,14 +89,18 @@ const GameOfLife = ({
       </div>
       <div className={CSS.buttons}>
         <button
-          className={`nes-btn ${isLiveGame ? "is-disabled" : "is-success"} ${CSS.button}`}
+          className={`nes-btn ${isLiveGame ? "is-disabled" : "is-success"} ${
+            CSS.button
+          }`}
           onClick={startGame}
           disabled={isLiveGame}
         >
           START
         </button>
         <button
-          className={`nes-btn ${isLiveGame ? "is-error" : "is-disabled"} ${CSS.button}`}
+          className={`nes-btn ${isLiveGame ? "is-error" : "is-disabled"} ${
+            CSS.button
+          }`}
           onClick={stopGame}
           disabled={!isLiveGame}
         >
