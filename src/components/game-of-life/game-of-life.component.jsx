@@ -6,7 +6,6 @@ import {
   clearBoard,
 } from "../../helper.js";
 import GridCell from "../grid-cell/grid-cell.component";
-import "nes.css/css/nes.min.css";
 import CSS from "./game-of-life.module.scss";
 
 const BOARD_X = 40;
