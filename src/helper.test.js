@@ -3,7 +3,8 @@ import {
   getLiveNeighborCount,
   advanceOneGen,
   toggleCell,
-  copyBoard
+  copyBoard,
+  clearBoard
 } from "./helper.js";
 
 describe("getRandomizedBoard", () => {
@@ -147,6 +148,25 @@ describe("copyBoard", () => {
     for (let r = 0; r < R; r++) {
       for (let c = 0; c < C; c++) {
         expect(board[r][c]).toEqual(boardCopy[r][c]);
+      }
+    }
+  })
+})
+
+describe("clearBoard", () => {
+  it ("takes a board and returns a blank copy of it", () => {
+    let board = [
+      [0, 1, 0],
+      [0, 0, 0],
+      [1, 1, 0],
+    ];
+    let newBoard = clearBoard(board);
+    let R = newBoard.length;
+    let C = newBoard[0].length;
+
+    for (let r = 0; r < R; r++) {
+      for (let c = 0; c < C; c++) {
+        expect(newBoard[r][c]).toEqual(0);
       }
     }
   })

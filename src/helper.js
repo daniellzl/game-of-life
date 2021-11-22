@@ -65,3 +65,16 @@ export const copyBoard = (board) => {
 
   return newBoard;
 };
+
+export const clearBoard = (board) => {
+  const R = board.length;
+  const C = board[0].length;
+  const newBoard = new Array(R);
+  for (let r = 0; r < R; r++) {
+    newBoard[r] = new Array(C);
+    for (let c = 0; c < C; c++) {
+      newBoard[r][c] = 0;
+    }
+  }
+  return newBoard;
+}
