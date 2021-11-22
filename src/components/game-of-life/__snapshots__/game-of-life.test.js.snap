@@ -1,350 +1,248 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`doesn't explode 1`] = `
-<Fragment>
-  <div>
+<div
+  className="gameOfLife"
+>
+  <div
+    className="title"
+  >
+    Game of Life
+  </div>
+  <div
+    className="generations"
+  >
+    Generations: 
     0
   </div>
   <div
-    key="row0"
-    style={
-      Object {
-        "display": "flex",
-      }
-    }
+    className="board"
   >
     <div
-      key="col0"
-      onClick={[Function]}
+      key="row0"
       style={
         Object {
-          "padding": "10px",
+          "display": "flex",
         }
       }
     >
-      1
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col0"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col1"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col2"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col3"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col4"
+      />
     </div>
     <div
-      key="col1"
-      onClick={[Function]}
+      key="row1"
       style={
         Object {
-          "padding": "10px",
+          "display": "flex",
         }
       }
     >
-      1
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col0"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col1"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col2"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col3"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col4"
+      />
     </div>
     <div
-      key="col2"
-      onClick={[Function]}
+      key="row2"
       style={
         Object {
-          "padding": "10px",
+          "display": "flex",
         }
       }
     >
-      0
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col0"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col1"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col2"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col3"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col4"
+      />
     </div>
     <div
-      key="col3"
-      onClick={[Function]}
+      key="row3"
       style={
         Object {
-          "padding": "10px",
+          "display": "flex",
         }
       }
     >
-      0
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col0"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col1"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col2"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col3"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col4"
+      />
     </div>
     <div
-      key="col4"
-      onClick={[Function]}
+      key="row4"
       style={
         Object {
-          "padding": "10px",
+          "display": "flex",
         }
       }
     >
-      0
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col0"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col1"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col2"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={false}
+        isLiveGame={false}
+        key="col3"
+      />
+      <GridCell
+        handleCellClick={[Function]}
+        isAlive={true}
+        isLiveGame={false}
+        key="col4"
+      />
     </div>
   </div>
   <div
-    key="row1"
-    style={
-      Object {
-        "display": "flex",
-      }
-    }
+    className="buttons"
   >
-    <div
-      key="col0"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-    <div
-      key="col1"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col2"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-    <div
-      key="col3"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col4"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-  </div>
-  <div
-    key="row2"
-    style={
-      Object {
-        "display": "flex",
-      }
-    }
-  >
-    <div
-      key="col0"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-    <div
-      key="col1"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-    <div
-      key="col2"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col3"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col4"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-  </div>
-  <div
-    key="row3"
-    style={
-      Object {
-        "display": "flex",
-      }
-    }
-  >
-    <div
-      key="col0"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col1"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col2"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-    <div
-      key="col3"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col4"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-  </div>
-  <div
-    key="row4"
-    style={
-      Object {
-        "display": "flex",
-      }
-    }
-  >
-    <div
-      key="col0"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col1"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col2"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col3"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      0
-    </div>
-    <div
-      key="col4"
-      onClick={[Function]}
-      style={
-        Object {
-          "padding": "10px",
-        }
-      }
-    >
-      1
-    </div>
-  </div>
-  <div>
     <button
+      className="nes-btn is-success button"
       disabled={false}
-      id="start-game"
       onClick={[Function]}
     >
-      start
+      START
     </button>
     <button
+      className="nes-btn is-disabled button"
       disabled={true}
       onClick={[Function]}
     >
-      stop
+      STOP
     </button>
     <button
-      disabled={false}
+      className="nes-btn is-warning button"
       onClick={[Function]}
     >
-      reset
+      CLEAR
+    </button>
+    <button
+      className="nes-btn is-primary button"
+      onClick={[Function]}
+    >
+      RESET
     </button>
   </div>
-</Fragment>
+</div>
 `;
