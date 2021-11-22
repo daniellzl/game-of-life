@@ -1,7 +1,12 @@
 # Game of Life
 
 # Notes
-### node-sass incompatibility
+
+### nes.css Node incompatibility
+
+Just added `nes.css`  to `/src/vendor/assets/stylesheets`. Owner of `nes.css` hasn't updated master in a while.
+
+### node-sass Node incompatibility
 
 https://github.com/sass/node-sass/issues/3103
 
